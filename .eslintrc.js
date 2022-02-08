@@ -15,6 +15,12 @@ module.exports = {
     plugins: ['react', '@typescript-eslint'],
     rules: {
         'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx', '.tsx'] }],
+        'react/jsx-props-no-spreading': [
+            1,
+            {
+                custom: 'ignore',
+            },
+        ],
         'no-use-before-define': 'off',
         '@typescript-eslint/no-use-before-define': ['error'],
     },
